@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-8 offset-md-2">
         <!-- Add new Task -->
-        <NewTask @added="handleAddedTask"/>
+        <NewTask />
 
         <!-- List of uncompleted tasks -->
         <Tasks :tasks="uncompletedTasks" />
@@ -19,7 +19,7 @@
         </div>
 
         <!-- List of completed tasks -->
-        <Tasks :tasks="completedTasks" :show="completedTasksIsVisible && showCompletedTasks" />
+        <Tasks v-if="showCompletedTasks" :tasks="completedTasks" />
 
       </div>
     </div>
@@ -29,23 +29,19 @@
 
 <script setup>
 import {onMounted,ref,computed} from 'vue';
-import {allTasks, createTask} from "../http/task-api";
+import {storeToRefs} from "pinia";
+import {useTaskStore} from "../stores/task";
 import Tasks from '../components/tasks/Tasks.vue';
 import NewTask from '../components/tasks/NewTask.vue';
 
-const tasks = ref([])
+const store = useTaskStore()
+const {completedTasks, uncompletedTasks} = storeToRefs(store)
+const {fetchAllTasks} = store
 
-onMounted(async () => {
-  const {data} = await allTasks()
-  tasks.value = data.data
+onMounted(async () => {  
+  await fetchAllTasks()
 })
 
-const uncompletedTasks = computed(
-  () => tasks.value.filter(tasks => !tasks.is_completed)
-)
-const completedTasks = computed(
-  () => tasks.value.filter(tasks => tasks.is_completed)
-)
 const showToggleCompletedBtn = computed(
   () => uncompletedTasks.value.length > 0 && completedTasks.value.length > 0
 )
@@ -53,9 +49,4 @@ const completedTasksIsVisible = computed(
   () => uncompletedTasks.value.length === 0 || completedTasks.value.length > 0
 )
 const showCompletedTasks = ref(false)
-
-const handleAddedTask = async (NewTask) => {
-  const {data: createdTask} = await createTask(NewTask)
-  tasks.value.unshift(createdTask.data)
-}
 </script>
