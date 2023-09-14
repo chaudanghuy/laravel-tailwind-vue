@@ -22,6 +22,18 @@ class TaskPolicy
     }
 
     /**
+     * Determine whether the user can create the model.
+     *
+     * @param  \App\Models\User  $user
+     * @param  \App\Models\Task  $task
+     * @return \Illuminate\Auth\Access\Response|bool
+     */
+    public function create(User $user)
+    {
+        return true;
+    }
+
+    /**
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
@@ -31,7 +43,7 @@ class TaskPolicy
     public function view(User $user, Task $task)
     {
         return $user->id === $task->user_id;
-    }    
+    }
 
     /**
      * Determine whether the user can update the model.
