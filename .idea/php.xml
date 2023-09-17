@@ -124,6 +124,8 @@
       <path value="$PROJECT_DIR$/backend/vendor/laravel/helpers" />
       <path value="$PROJECT_DIR$/backend/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/backend/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/backend/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/backend/vendor/parsedown/laravel" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

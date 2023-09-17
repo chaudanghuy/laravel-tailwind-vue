@@ -5,43 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b7d17fc-fb17-4dde-834e-6fa6edd46d52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app/Models/Question.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/database/migrations/2023_09_15_101648_create_questions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/resources/views/questions/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/Policies/QuestionPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/resources/views/layouts/_messages.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/resources/views/questions/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/resources/views/questions/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/resources/views/questions/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/resources/views/questions/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/QuestionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/QuestionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/questions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/questions/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,31 +182,37 @@
       <path value="$PROJECT_DIR$/backend/vendor/laravel/helpers" />
       <path value="$PROJECT_DIR$/backend/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/backend/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/backend/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/backend/vendor/parsedown/laravel" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2VOUYXPKSBwh9NFeEM4JGqvyIwf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;laravel-qa&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "laravel-qa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/backend/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
@@ -244,7 +232,8 @@
       <workItem from="1694737446760" duration="10000" />
       <workItem from="1694771058611" duration="10871000" />
       <workItem from="1694829733707" duration="626000" />
-      <workItem from="1694850490416" duration="10775000" />
+      <workItem from="1694850490416" duration="15454000" />
+      <workItem from="1694912072990" duration="10213000" />
     </task>
     <servers />
   </component>
@@ -261,5 +250,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
