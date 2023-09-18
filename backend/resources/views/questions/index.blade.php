@@ -3,38 +3,38 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex align-items-center">
                             All Questions
-                            <div class="ml-auto">
-                                <a href="{{ route('questions.create') }}" class="btn btn-outline-secondary">
+                            <div>
+                                <a href="{{ route('questions.create') }}" class="float-end btn btn-outline-secondary">
                                     Ask Question
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card-body">
+                    <div class="card-body ml-auto">
                         @include('layouts._messages')
 
                         @foreach($questions as $question)
-                            <div class="media">
-                                <div class="d-flex flex-column counters">
+                            <div class="media row">
+                                <div class="col-md-3 d-flex flex-column counters">
                                     <div class="vote">
                                         <strong>{{ $question->votes  }}</strong>
                                         {{ str_plural('vote', $question->votes)  }}
                                     </div>
                                     <div class="status {{ $question->status }}">
-                                        <strong>{{ $question->answers  }}</strong>
-                                        {{ str_plural('answer', $question->answers)  }}
+                                        <strong>{{ $question->answers_count  }}</strong>
+                                        {{ str_plural('answer', $question->answers_count)  }}
                                     </div>
                                     <div class="view">
                                         {{ $question->views . " " . str_plural('view', $question->views)  }}
                                     </div>
                                 </div>
-                                <div class="media-body">
+                                <div class="col-md-6 media-body">
                                     <div class="d-flex align-items-center">
                                         <h3 class="mt-0">
                                             <a href="{{$question->url}}">{{$question->title}}</a>

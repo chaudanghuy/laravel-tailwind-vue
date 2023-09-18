@@ -2,12 +2,13 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Question>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Answer>
  */
-class QuestionFactory extends Factory
+class AnswerFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,10 +18,9 @@ class QuestionFactory extends Factory
     public function definition()
     {
         return [
-            'title' => rtrim(fake()->sentence(rand(5, 10)), "."),
             'body' => fake()->paragraphs(rand(3, 7), true),
-            'views' => rand(0, 10),
-            'votes' => rand(-3, 10),
+            'user_id' => User::pluck('id')->random(),
+            'votes_count' => rand(0, 5),
         ];
     }
 }
