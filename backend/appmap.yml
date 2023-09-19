@@ -1,0 +1,16 @@
+name: backend
+packages:
+  - path: resources\js
+  - path: vendor\barryvdh\laravel-debugbar\src\Resources\cache
+  - path: vendor\barryvdh\laravel-debugbar\src\Resources\sqlqueries
+  - path: vendor\filp\whoops\src\Whoops\Resources\js
+  - path: vendor\laravel\ui\src\Presets\bootstrap-stubs
+  - path: vendor\laravel\ui\src\Presets\react-stubs
+  - path: vendor\laravel\ui\src\Presets\vue-stubs
+  - path: vendor\maximebf\debugbar\src\DebugBar\Resources
+  - path: vendor\phpunit\php-code-coverage\src\Report\Html\Renderer\Template\js
+  - path: vendor\spatie\ignition\resources\compiled
+  - path: vendor\symfony\error-handler\Resources\assets\js
+  - path: vendor\symfony\var-dumper\Resources\js
+language: javascript
+appmap_dir: tmp/appmap
