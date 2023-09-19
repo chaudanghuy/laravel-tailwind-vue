@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@appland/appmap-agent-js": "^14.2.0",
     "vue": "^3.2.45"
   },
   "devDependencies": {
