@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b7d17fc-fb17-4dde-834e-6fa6edd46d52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/app/Models/Answer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/database/factories/AnswerFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/database/migrations/2023_09_17_070509_create_answers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/database/migrations/2023_09_17_072426_rename_answers_in_questions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/resources/js/fontawesome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Policies/QuestionPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Policies/QuestionPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/factories/QuestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/factories/QuestionFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/questions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/questions/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/resources/views/questions/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/questions/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,6 +223,14 @@
       <workItem from="1694850490416" duration="15454000" />
       <workItem from="1694912072990" duration="19649000" />
       <workItem from="1694998017316" duration="485000" />
+      <workItem from="1695012845510" duration="34000" />
+      <workItem from="1695084134076" duration="50000" />
+      <workItem from="1695131673250" duration="484000" />
+      <workItem from="1695139011118" duration="837000" />
+      <workItem from="1695168586365" duration="600000" />
+      <workItem from="1695303005725" duration="637000" />
+      <workItem from="1695342838854" duration="654000" />
+      <workItem from="1695388742352" duration="2697000" />
     </task>
     <servers />
   </component>

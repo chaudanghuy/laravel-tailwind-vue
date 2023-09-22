@@ -1,0 +1,4 @@
+name: Laranen
+packages:
+  - path: backend
+  - path: frontend
