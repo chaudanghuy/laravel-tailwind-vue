@@ -20,7 +20,8 @@ class QuestionFactory extends Factory
             'title' => rtrim(fake()->sentence(rand(5, 10)), "."),
             'body' => fake()->paragraphs(rand(3, 7), true),
             'views' => rand(0, 10),
-            'votes' => rand(-3, 10),
+//            'votes' => rand(-3, 10),
+            'votes_count' => rand(-3, 10),
         ];
     }
 }

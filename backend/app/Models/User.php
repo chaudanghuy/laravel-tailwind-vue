@@ -63,4 +63,46 @@ class User extends Authenticatable
         $size = 32;
         return "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "&s=" . $size;
     }
+
+    public function favorites()
+    {
+        return $this->belongsToMany(Question::class, 'favorites', 'user_id', 'question_id')->withTimestamps();
+    }
+
+    public function voteQuestions()
+    {
+        return $this->morphedByMany(Question::class, 'voteables');
+    }
+
+    public function voteAnswers()
+    {
+        return $this->morphedByMany(Answer::class, 'voteables');
+    }
+
+    public function voteQuestion(Question $question, $vote)
+    {
+        $voteQuestions = $this->voteQuestions();
+        $this->_vote($voteQuestions, $question, $vote);
+    }
+
+    public function voteAnswer(Answer $answer, $vote)
+    {
+        $voteAnswers = $this->voteAnswers();
+        $this->_vote($voteAnswers, $answer, $vote);
+    }
+
+    public function _vote($relationship, $model, $vote)
+    {
+        if ($relationship->where('voteables_id', $model->id)->exists()) {
+            $relationship->updateExistingPivot($model, ['vote' => $vote]);
+        } else {
+            $relationship->attach($model, ['vote' => $vote]);
+        }
+
+        $model->load('votes');
+        $downVotes = (int) $model->votes()->wherePivot('vote', -1)->sum('vote');
+        $upVotes = (int) $model->votes()->wherePivot('vote', 1)->sum('vote');
+        $model->votes_count = $upVotes + $downVotes;
+        $model->save();
+    }
 }

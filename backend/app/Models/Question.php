@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
+use App\VoteableTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Question extends Model
 {
     use HasFactory;
+    use VoteableTrait;
 
     protected $fillable = ['title', 'body'];
 
@@ -51,5 +53,33 @@ class Question extends Model
     public function answers()
     {
         return $this->hasMany(Answer::class);
+    }
+
+    public function acceptBestAnswer(Answer $answer)
+    {
+        $this->best_answer_id = $answer->id;
+        $this->save();
+    }
+
+    public function favorites()
+    {
+        return $this
+            ->belongsToMany(User::class, 'favorites', 'question_id', 'user_id')
+            ->withTimestamps();
+    }
+
+    public function isFavorited()
+    {
+        return $this->favorites()->where('user_id', auth()->id())->count() > 0;
+    }
+
+    public function getIsFavoritedAttribute()
+    {
+        return $this->isFavorited();
+    }
+
+    public function getFavoritesCountAttribute()
+    {
+        return $this->favorites->count();
     }
 }
