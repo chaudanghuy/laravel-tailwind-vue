@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b7d17fc-fb17-4dde-834e-6fa6edd46d52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/resources/js/fontawesome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config/purifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/resources/js/components/UserInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/questions/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/questions/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Answer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/answers/_index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/answers/_index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/questions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/questions/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +26,13 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/backend/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -172,6 +184,8 @@
       <path value="$PROJECT_DIR$/backend/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/backend/vendor/erusev/parsedown" />
       <path value="$PROJECT_DIR$/backend/vendor/parsedown/laravel" />
+      <path value="$PROJECT_DIR$/backend/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/backend/vendor/mews/purifier" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -192,15 +206,27 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;laravel-qa&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/ahi/laranen/backend/resources/views/answers&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\ahi\\laranen\\frontend\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ahi\laranen\backend\resources\views\answers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/backend/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
@@ -230,12 +256,39 @@
       <workItem from="1695168586365" duration="600000" />
       <workItem from="1695303005725" duration="637000" />
       <workItem from="1695342838854" duration="654000" />
-      <workItem from="1695388742352" duration="2697000" />
+      <workItem from="1695388742352" duration="3333000" />
+      <workItem from="1695401183704" duration="25000" />
+      <workItem from="1695455007796" duration="695000" />
+      <workItem from="1695480258174" duration="408000" />
+      <workItem from="1695480686455" duration="232000" />
+      <workItem from="1695480938709" duration="874000" />
+      <workItem from="1695546428270" duration="255000" />
+      <workItem from="1695546693853" duration="13105000" />
+      <workItem from="1695646294263" duration="1228000" />
+      <workItem from="1695689395794" duration="79000" />
+      <workItem from="1695735688935" duration="194000" />
+      <workItem from="1695735898735" duration="3305000" />
+      <workItem from="1695740715392" duration="2261000" />
+      <workItem from="1695774131879" duration="275000" />
+      <workItem from="1695822484057" duration="3041000" />
+      <workItem from="1695862500854" duration="19000" />
+      <workItem from="1695910146379" duration="3568000" />
+      <workItem from="1695947177299" duration="601000" />
+      <workItem from="1696149257582" duration="2945000" />
+      <workItem from="1696208146063" duration="220000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:tailwindcss" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:vite" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:vue" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:postcss" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

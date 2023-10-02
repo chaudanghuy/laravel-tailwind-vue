@@ -1,3 +1,4 @@
+@if($answersCount > 0)
 <div class="row mt-4 justify-content-center">
     <div class="row col-md-12">
         @include('layouts._messages')
@@ -88,3 +89,4 @@
         </div>
     </div>
 </div>
+@endif
