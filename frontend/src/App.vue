@@ -1,17 +1,23 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue';
+import SearchBar from './components/SearchBar.vue';
+import PopularServices from './components/PopularServices.vue';
+import HowItWork from './components/HowItWork.vue';
+import ExploreCitites from './components/ExploreCities.vue';
+import NewServices from './components/NewServices.vue';
+import RecentPosts from './components/RecentPosts.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <Navbar/>      
+  <SearchBar/>
+  <ExploreCitites/>
+  <PopularServices/>
+  <HowItWork/>
+  <NewServices/>
+  <RecentPosts/>
+  <Footer/> 
 </template>
 
 <style scoped>
