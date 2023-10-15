@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->dateTime('cancel_booking_date');
             $table->string('cancel_person');
-            $table->bigInteger('cancel_person_id');
+            $table->integer('cancel_person_id');
             $table->dateTime('payment_date');
             $table->text('reason');
             $table->timestamps();

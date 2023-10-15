@@ -7,28 +7,28 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="/src/assets/img/logo/logo.png" alt=""></a>
+                            <a href="/"><img src="/src/assets/img/logo/logo.png" alt=""></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu f-right d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="listing.html">Catagories</a></li> 
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="listings">Catagories</a></li> 
                                     <li><a href="#">Pages</a>
                                         <ul class="submenu">
-                                            <li><a href="directory_details.html">listing Details</a></li>
-                                            <li><a href="listing.html">Catagories</a></li> 
+                                            <li><a href="/listing">listing Details</a></li>
+                                            <li><a href="/listings">Catagories</a></li> 
                                         </ul>
                                     </li>
-                                    <li><a href="blog.html">Blog</a>
+                                    <li><a href="/blogs">Blog</a>
                                         <ul class="submenu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog_details.html">Blog Details</a></li>
-                                            <li><a href="elements.html">Elements</a></li>
+                                            <li><a href="/blog">Blog</a></li>
+                                            <li><a href="/blog">Blog Details</a></li>
+                                            <li><a href="/elements">Elements</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>          

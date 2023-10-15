@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::resource('products', ProductController::class);
+    Route::apiResource('products', ProductController::class);
 });
 
 Route::controller(RegisterController::class)->group(function() {
